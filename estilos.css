@@ -1,0 +1,599 @@
+@font-face {
+    font-family: 'icomoon';
+    src:  url('fonts/icomoon.eot?hhzwuc');
+    src:  url('fonts/icomoon.eot?hhzwuc#iefix') format('embedded-opentype'),
+      url('fonts/icomoon.ttf?hhzwuc') format('truetype'),
+      url('fonts/icomoon.woff?hhzwuc') format('woff'),
+      url('fonts/icomoon.svg?hhzwuc#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  
+  [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-menu:before {
+    content: "\e9bd";
+  }
+
+  
+body {
+    background-color: #333333;
+    background-image: url('images/Web\ 1366\ –\ 2.png');
+    background-repeat: no-repeat;
+    background-size: 100vw;
+    background-position-y: top;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+figure {
+    margin: 0;
+}
+
+strong {
+    color: #333333;
+}
+
+/* header */
+
+header {
+    display: flex;
+    align-items: center;
+}
+
+
+header h2 {
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+nav {
+    
+    margin-right: 148.7px;
+    padding-left: 50px;
+    width: 100%;
+    height: inherit;
+}
+
+header ol {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: inherit;
+}
+
+header li {
+    height: inherit;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 500;
+    margin-right: 20px;
+    height: inherit;
+}
+
+header a:hover {
+    color: #bfbfbf;
+    text-decoration: underline;
+}
+
+/* Main */
+
+/* Hero */
+
+.hero {
+    margin-top: 125px;
+    margin-left: 67px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 70px;
+    color: #E1F4F3;
+    font-weight: 900;
+}
+
+.hero h2 {
+    margin: 0;
+    color: #706C61;
+    font-size: 30px;
+    font-weight: bold;
+} 
+
+/* About */
+
+.about, .prizes-section, .experience {
+    background-color: #ffffffd4;
+    width: 860px;
+    border-radius: 39px;
+    margin: auto; 
+    box-sizing: border-box;
+}
+
+.about {
+    height: 211px;
+    margin-top: 150px;
+    padding: 0 100px;
+}
+
+ .about h2, .prizes-section h2, .experience h2 {
+    width: 100%; 
+    padding-top: 20px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+ }
+
+ .about p, .prizes-section p {
+     width: 100%;
+     font-size: 20px;
+     font-weight: 400px;
+     color: #706C61;
+     text-align: justify;
+ }
+
+/* Prizes */
+
+.prizes-section {
+    height: 690px;
+    margin-top: 100px;
+    padding: 0 74px;
+}
+
+.prizes-section a {
+    color: #706C61;
+}
+
+.prizes-section a:hover {
+    color: #46443d;
+}
+
+.prizes-details1, .prizes-details2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+    
+}
+
+.prizes-description1, .prizes-description2 {
+    width: 320px;
+}
+
+/* Experience */
+
+.experience {
+    height: 770px;
+    margin-top: 84px;
+    margin-bottom: 70px;
+    padding: 0 100px;
+}
+
+.experience article {
+    text-align: center;    
+}
+
+.experience iframe {
+    margin-bottom: 20px;
+}
+
+/* Footer */
+
+footer {
+    background-color: white;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 15px;
+    flex-wrap: wrap;
+}
+
+footer label {
+    font-size: 30px;
+    font-weight: 500;
+    vertical-align: middle;
+    margin-bottom: 10px;
+}
+
+footer input {
+    margin: 0 15px 10px;
+    padding-left: 10px;
+    width: 249px;
+    height: 29px;
+    border-radius: 8px;
+    border-style:  solid;
+    border-color: #707070;
+    vertical-align: middle;
+}
+
+footer button {
+    background-color: #706C61;
+    color: white;
+    font-size: 20px;
+    width: 107px;
+    height: 29px;
+    border-style: solid;
+    border-color: #565656;
+    border-radius: 8px;
+    margin-top: 10px;
+    margin-right: 15px;
+}
+
+footer button:hover {
+    background-color: #888479;
+    color: #cecece;
+    border-color: #868585;
+    cursor: pointer;
+}
+
+footer figure {
+    margin-top: 15px;
+    text-align: center;
+}
+
+footer img {
+    margin-right: 40px;
+}
+
+footer img:hover {
+    opacity: 80%;
+}
+
+
+.burger-button {
+    background-color: #00000091;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: block;
+    line-height: 50px;
+    text-align: center;
+    position: fixed;
+    z-index: 4;
+    left: 20px;
+    top: 20px;
+    color: white;
+    display: none;
+    font-size: 30px;
+}
+
+
+
+
+@media screen and (max-width: 1200px) {
+    .hero {
+        margin-left: 40px;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    .hero {
+        margin-left: 40px;
+    }
+    h1 {
+        font-size: 3.5em;
+    }
+}
+
+@media screen and (max-width: 1060px) {
+    footer {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 940px) {
+    .hero {
+        margin-left: 20px;
+    }
+    h1 {
+        font-size: 2.8em;
+    }
+
+    .experience {
+        height: auto;
+        padding-bottom: 10%;
+
+    }
+
+    .experience-videos {
+        width: 100%;
+        height: 0;
+        padding-top: 112.5%;
+        position: relative;
+    }
+
+    .youtube-video {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        width: 100%;
+        height: 50%;
+        z-index: 2;
+        
+    }
+
+    .youtube-video2 {
+        position: absolute;
+        top: 56%;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        width: 100%;
+        height: 50%;
+        z-index: 2;
+    }
+
+    
+    
+}
+/* @media screen and (max-width: 1024px) {
+
+} */
+
+@media screen and (max-width: 767px) {
+    body {
+        background-image: url('images/Repetir cuadrícula 1@2x.png');
+        background-position: initial;
+        background-size: 767px;
+        /* background-position-y: bottom; */
+        background-attachment: initial;
+    }
+    
+    .burger-button {
+        display: block;
+    }
+    header {
+        display: block;
+        background-color: #00000091;
+        width: 322px;
+        margin-top: 0;
+        height: auto;
+        
+        
+    }
+    
+
+    .menu {
+        position: fixed;
+        background-color: #000000;
+        z-index: 3;
+        top: 0;
+        left: -382px;
+        width: 322px;
+        bottom: 0;
+        display: flex;
+        align-items: center;
+        transition: .3s;
+    }
+    
+    .menu.is-active {
+        left: 0;
+    }
+    
+    header {
+        background-color: transparent;
+        width: 100%;
+    }
+
+    /* .hero h1 {
+        display: inline;
+    }
+
+    .hero h2 {} */
+    .about {
+        margin-top: 73vh;
+        width: auto;
+        height: auto;
+        margin-left: 10px;
+        margin-right: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 20px;
+    }
+    .prizes-section {
+        width: auto;
+        height: auto;
+        margin-left: 10px;
+        margin-right: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .prizes-details1, .prizes-details2 {
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .prizes-description1, .prizes-description2 {
+        width: 100%;
+    }
+
+    .prizes-description1 img {
+        text-align: center;
+    }
+    .experience {
+        width: auto;
+        max-height: fit-content;
+
+        margin-left: 10px;
+        margin-right: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .hero {
+        width: 300px;
+        
+        margin-right: 40px;
+        margin-left: auto;
+    }
+    .portfolio {
+        background: transparent;
+        text-align: end;
+        padding-right: 50px;
+    }
+    
+    
+
+    header ol {
+        display: block;
+        height: auto;
+        margin-top: 50%
+    }
+
+    header li {
+        margin-bottom: 95px;
+        height: auto;
+        margin-bottom: 20%;
+    }
+
+    header a {
+        color: #706C61;
+        font-size: 40px;
+        text-decoration: underline;
+    }
+
+    .experience {
+        height: auto;
+        padding-bottom: 10%;
+
+    }
+
+    .experience-videos {
+        width: 100%;
+        height: 0;
+        padding-top: 112.5%;
+        position: relative;
+    }
+
+    .youtube-video {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        width: 100%;
+        height: 50%;
+        z-index: 2;
+        
+    }
+
+    .youtube-video2 {
+        position: absolute;
+        top: 56%;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        width: 100%;
+        height: 50%;
+        z-index: 2;
+    }
+
+    form {
+        text-align: center;
+    }
+    
+}
+@media screen and (max-width: 600px) {
+        body {
+            background-image: url('images/Repetir cuadrícula 2@2x.png');
+            background-position: initial;
+        background-size: 600px;
+        /* background-position-y: bottom; */
+        background-attachment: initial;
+            
+        }
+
+        .hero {
+            margin: 125px auto 0;
+        }
+}
+
+@media screen and (max-width: 360px) {
+
+    .menu {
+        position: fixed;
+        background-color: #000000;
+        z-index: 3;
+        top: 0;
+        left: -582px;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        transition: .3s;
+        padding-left: 0;
+    }
+
+    ol {
+        text-align: center;
+    }
+
+    .experience {
+        height: 470px;
+        padding-bottom: 20px;
+    }
+    .experience-videos {
+        width: 100%;
+        height: 0;
+        padding-top: 112.5%;
+        position: relative;
+    }
+
+    .youtube-video {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        width: 100%;
+        height: 50%;
+        z-index: 2;
+        
+    }
+
+    .youtube-video2 {
+        position: absolute;
+        top: 56%;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        width: 100%;
+        height: 50%;
+        z-index: 2;
+    }
+
+    form {
+        text-align: center;
+    }
+
+    
+}

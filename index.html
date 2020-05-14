@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Julián Rincón</title>
+    <link rel="icon" type="image/png" href="images/Icon material-audiotrack.png" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;900&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1" >
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <i class="icon-menu burger-button" id="burger-menu"></i>
+    <header id="home">
+        
+        <h2 class="portfolio">
+            Portfolio.
+        </h2>
+        <nav class="menu">
+            <ol>
+                <li>
+                    <a href="#home">Home</a>
+                </li>
+                <li>
+                    <a href="#about">About</a>
+                </li>
+                <li>
+                    <a href="#prizes">Prizes</a>
+                </li>
+                <li>
+                    <a href="#experience">Experience</a>
+                </li>
+                <li>
+                    <a href="#contact">Contact</a>
+                </li>
+            </ol>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <h1>Julián Rincón</h1>
+            <h2>Ingeniero de Sonido</h2>
+        </section>
+        <section id="about" class="about">
+            <h2>About</h2>
+            <p>
+                Soy ingeniero de sonido apasionado por la mezcla, el sonido en vivo y la
+                post-producción de audio, ganador de dos premios internacionales en NY
+                en la convención de la AES. También diseño dispositivos de audio con 
+                mucho estilo 
+            </p>
+        </section>
+        <div>
+            <section id="prizes" class="prizes-section">
+                <h2>Prizes</h2>
+                <article>
+                    <div class="prizes-details1">
+                        <div class="prizes-description1">
+                            <p>
+                                Ganador de medalla de oro en la 
+                                competencia estudiantil de la 
+                                AES realizada en Los Angeles
+                                en el año 2016. 
+                            </p> 
+                            <p><small><strong>Fecha:</strong> 20/10/2016</small></p>
+                            <p><small><strong>Mas detalles: </strong><a href="http://www.aes.org/students/awards/design/aes141.cfm" target="_blank"> www.aes.org/students/aw...</a></small></p>
+                        </div>
+                        <figure class="prizes-image1"></figure>
+                            <img src="http://www.aes.org/images/blog_img/3/ID/1180.jpg" alt="" width="320px">
+                        </figure>
+                    </div> 
+                    <div class="prizes-details2">
+                        <figure class="prizes-image2">
+                            <img src="http://www.aes.org/images/blog_img/3/ID/1449.jpg" alt="" width="320px">
+                        </figure>
+                        <div class="prizes-description2">
+                            <p>
+                                Ganador de medalla de plata en la 
+                                competencia estudiantil de la 
+                                AES realizada en Nueva York en
+                                el año 2017. 
+                            </p>
+                            <p><small><strong>Fecha:</strong> 20/10/2017</small></p>
+                            <p><small><strong>Mas detalles: </strong><a href="http://www.aes.org/students/awards/recording/past_winners_aes143.cfm" target="_blank"> www.aes.org/students/aw...</a></small></p>                    
+                        </div>
+                    </div>
+                </article>
+            </section>
+            <section id="experience" class="experience">
+                <h2>Experience</h2>
+                <article class="experience-videos">
+                    <iframe class="youtube-video" width="560" height="315" src="https://www.youtube.com/embed/gGGq4XSFiEg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe class="youtube-video2" width="560" height="315" src="https://www.youtube.com/embed/A292HFi46nU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </article>
+            </section>
+        </main>
+        <footer id="contact">
+            <form action="/suscripcion/">
+                <label for="email">Contáctame</label>
+                <input type="text" placeholder="Déjame tu e-mail" id="email">
+                <button>Enviar</button>
+            </form>
+        </div>
+        <figure>
+            <a href="https://www.facebook.com/jdrinconruiz" target="_blank"><img src="images/Icon awesome-facebook.png" alt=""></a>
+            <a href="https://www.instagram.com/julian_david_rincon/" target="_blank"><img src="images/Icon awesome-instagram.png" alt=""></a>
+            <a href="https://soundcloud.com/julianrincon" target="_blank"><img src="images/Icon zocial-soundcloud.png" alt=""></a>           
+            <a href="https://github.com/JulianDavidRincon" target="_blank"><img src="images/Icon awesome-github.png" alt=""></a>
+        </figure>
+    </footer>
+    <script>
+        const menu = document.querySelector('.menu')
+            console.log(menu);
+            const burgerButton = document.querySelector('#burger-menu')
+            console.log(burgerButton)
+            /* menu.classList.add('is-inactive'); */
+            
+
+            
+            burgerButton.addEventListener('click', esconder)
+
+            function esconder() 
+            {
+                if (menu.classList.contains('is-active'))
+                {
+                    menu.classList.remove('is-active');
+                }
+                else
+                {
+                    menu.classList.add('is-active');
+                }
+            } 
+    </script>
+</body>
+</html>
